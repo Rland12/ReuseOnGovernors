@@ -1,7 +1,13 @@
 import React, { useState } from 'react'; 
 import 'leaflet/dist/leaflet.css';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
+import VendorsPage from './components/VendorsPage';
+import Home from './components/Home';
+import RewardsPage from './components/RewardsPage';
+import ScanPage from './components/ScanPage';
+import EventsPage from './components/EventsPage';
 
 
 function App() {
@@ -13,34 +19,20 @@ function App() {
 
   return (
     <div className='body-container-background'>
+      <Router>
 
-      {isLoginVisible && (
-        <div className='login-container'>
-        <button className='close' onClick={handleClose}>x</button>
-
-        <div className='content'> 
-          <h1 className='title-1'>Sign Up,</h1>
-          <h1 className='title-2'>Get Rewards</h1>
-          <h2 className='name'>Name</h2>
-          <input className='enter-name' type="text" placeholder='Enter your name'/>
-          <h2 className='contact'>Email/Phone Number</h2>
-          <input className='enter-contact' type="text" placeholder='Enter your email/phone number'/>
-          <button className='signup-button'>
-            <h3 className='signup'>Sign Up</h3>
-          </button>
-          <h3 className='account'>Already have an account?</h3>
-          <button className='login-button'>
-            <h3 className='login'>Login</h3>
-          </button>
-        </div>
-      </div>     
-      )}
-
-      {!isLoginVisible && (
-        <NavigationBar />
-      )}
-      
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/vendors" element={<VendorsPage />} />
+          <Route path="/rewards" element={<RewardsPage />} />
+          <Route path="/scan" element={<ScanPage />} />
+          <Route path="/events" element={<EventsPage />} />
+        </Routes>
+        
+      </Router>
     </div>
+
+    
   );
 }
 

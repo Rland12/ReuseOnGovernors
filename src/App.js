@@ -1,13 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'; 
+import 'leaflet/dist/leaflet.css';
 import './App.css';
-
+import NavigationBar from './components/NavigationBar';
 
 
 function App() {
+  const [isLoginVisible, setLoginVisible] = useState(true);
+
+  const handleClose = () => {
+    setLoginVisible(false);
+  };
+
   return (
     <div className='body-container-background'>
-      <div className='login-container'>
-        <button className='close'>x</button>
+
+      {isLoginVisible && (
+        <div className='login-container'>
+        <button className='close' onClick={handleClose}>x</button>
 
         <div className='content'> 
           <h1 className='title-1'>Sign Up,</h1>
@@ -25,6 +34,12 @@ function App() {
           </button>
         </div>
       </div>     
+      )}
+
+      {!isLoginVisible && (
+        <NavigationBar />
+      )}
+      
     </div>
   );
 }

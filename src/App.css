@@ -36,9 +36,9 @@
   font-weight: 300;
   line-height: normal;
   cursor: pointer; 
-  position: absolute; /* Position the button relative to its parent */
-  top: 10px; /* Adjust to move the button down from the top */
-  right: 10px; /* Adjust to move the button from the right */
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
 }
 
 .close:focus {
@@ -212,4 +212,6 @@ input::placeholder {
   margin-top: 9px;
   margin-bottom: 10px;
 }
+
+
 

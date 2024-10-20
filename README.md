@@ -3,4 +3,5 @@ Team 5 app that incentivizes visitors on Governors Island to utilize reusables a
 
 # How to run project, 
 1)run npm install
+
 2)run npm install leaflet react-leaflet

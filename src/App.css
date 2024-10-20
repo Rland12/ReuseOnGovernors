@@ -1,0 +1,215 @@
+.body-container-background{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(75, 109, 135, 0.75);
+  width: 402px;
+  height: 874px;
+  flex-shrink: 0;
+}
+
+.login-container{
+  width: 367px;
+  height: 710px;
+  flex-shrink: 0;
+  border-radius: var(--Blur-100, 4px);
+  background: rgba(240, 244, 246, 0.96);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.50);
+  margin-top: 82px;
+  margin-left: 17px;
+  margin-right: 18px;
+  margin-bottom: 82px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.close {
+  background-color: transparent; 
+  border: none;
+  color: #000; 
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer; 
+  position: absolute; /* Position the button relative to its parent */
+  top: 10px; /* Adjust to move the button down from the top */
+  right: 10px; /* Adjust to move the button from the right */
+}
+
+.close:focus {
+  outline: none; 
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  width: 100%; 
+}
+
+.title-1{
+  width: 198px;
+  height: 58px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 42px;
+  margin-left: 85px;
+  margin-right: 84px;
+  margin-bottom: 0px;
+  white-space: nowrap;
+}
+
+.title-2{
+  width: 302px;
+  height: 58px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-left: 33px;
+  margin-right: 32px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+.name{
+  width: 67px;
+  height: 29px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 27px;
+  margin-right: 273px;
+  margin-bottom: 8px;
+}
+
+.enter-name, .enter-contact{
+  width: 319px;
+  height: 54px;
+  flex-shrink: 0;
+  border-radius: var(--Radius-200, 8px);
+  border: var(--sds-size-stroke-border) solid rgba(0, 0, 0, 0.10);
+  background: #FFF;
+}
+
+.enter-name{
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 3px;
+}
+
+.enter-contact{
+  margin-left: 21px;
+  margin-right: 27px;
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.5); 
+}
+
+.contact{
+  width: 241px;
+  height: 29px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 24px;
+  margin-right: 102px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+}
+
+.signup-button, .login-button{
+  width: 168px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 1px solid #000;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 1px;
+  cursor: pointer;
+}
+
+.signup-button{
+  margin-left: 100px;
+  margin-right: 99px;
+  margin-bottom: 15px;
+}
+
+.login-button{
+  margin-left: 97px;
+  margin-right: 102px;
+  margin-bottom: 40px;
+}
+
+.signup{
+  width: 88px;
+  height: 29px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 9px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  white-space: nowrap;
+}
+
+.account{
+  width: 289;
+  height: 29;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 11px;
+}
+
+.login{
+  width: 62;
+  height: 29;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 53px;
+  margin-right: 53px;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+

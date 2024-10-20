@@ -7,4 +7,6 @@ Reuse Island is an app that incentivizes visitors on Governors Island to utilize
 
 2)run npm install leaflet react-leaflet
 
+3)run npm install react-router-dom
+
 Final Figma Designs https://www.figma.com/design/y5heFA4BtUuC8KkvK1AqrW/Team-5-Design?node-id=2158-176&node-type=canvas&t=Lt0CWSjQ67jMEDbr-0

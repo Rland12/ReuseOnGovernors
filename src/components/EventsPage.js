@@ -38,7 +38,7 @@ const Events = () => {
   return (
     <div classname='main-content'>
       <div className="events-container">
-      {/* Header showing current user points */}
+        
       <header className="events-header">
         <h2>Events</h2>
       </header>

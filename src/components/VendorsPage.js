@@ -1,4 +1,3 @@
-import NavigationBar from './NavigationBar';
 import './styles/VendorsPageStyles.css';
 import React from "react";
 import { FaLeaf, FaBreadSlice } from "react-icons/fa"; // Example icons for dietary restrictions
@@ -40,9 +39,9 @@ const Vendors = () => {
 
   return (
     <div className="vendors-container">
-      <div className='header'>
-        <h1 className='heading'>VENDORS</h1>
-      </div>
+      <header className="vendors-header">
+        <h2>Vendors</h2>
+      </header>
       {vendors.map((vendor) => (
         <div key={vendor.id} className="vendor-card">
           {/* Restaurant Image */}

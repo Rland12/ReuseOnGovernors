@@ -5,7 +5,7 @@ Reuse Island is an app that incentivizes visitors on Governors Island to utilize
 # How to run project, 
 1)run npm install
 
-2)run npm install leaflet react-leaflet
+2)run npm install leaflet react-leaflet and npm install react-leaflet@4.x
 
 3)run npm install react-router-dom
 

@@ -7,6 +7,9 @@ const ScanQR = () => {
 
   return (
     <div className='main-content'>
+      <header className="scan-header">
+        <h2>Turn in Your Reusables</h2>
+      </header>
       <div className="scan-qr-container">
         <div className="scan-card">
           {/* User profile image at the top */}

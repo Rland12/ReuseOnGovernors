@@ -5,7 +5,15 @@
     height: 100vh; /* Full viewport height to center vertically */
     padding: 20px;
   }
-  
+  .scan-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .scan-header h2 {
+    font-size: 1.8rem;
+    color: white; /*brand color for the points header */
+  }
   .scan-card {
     width: 100px;
     max-width: 400px;

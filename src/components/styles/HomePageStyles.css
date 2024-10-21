@@ -1,0 +1,7 @@
+.map-container {
+    margin: 20px 0;
+    border: 2px solid #365f7b; /* Optional: Add a border to make it stand out */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  

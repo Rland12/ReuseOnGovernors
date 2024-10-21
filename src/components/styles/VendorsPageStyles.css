@@ -1,57 +1,67 @@
-.header{
-    width: 402px;
-    height: 108px;
-    flex-shrink: 0;
-    background: var(--Background-Disabled-Default, #D9D9D9);
-    position: absolute;
-}
-
-.heading {
-    width: 239px;
-    color: #000;
+.vendors-header {
+    width: 100%;
     text-align: center;
-    font-family: Inter;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin-left: 81px;
-    margin-right: 82px;
-    margin-top: 30px;
     margin-bottom: 20px;
-}
+  }
+  
+  .vendors-header h2 {
+    font-size: 1.8rem;
+    color: white; /* Your brand color */
+  }
 
-.vendor-container{
-    width: 320px;
-    height: 156px;
-    flex-shrink: 0;
-    border-radius: 7px;
-    background: #FFF;
-    margin-left: 39px;
-    margin-right: 43px;
-    margin-top: 170px;
-    margin-bottom: 39px;
-    position: absolute;
-
-}
-
-.eva-icon{
-    width: 101px;
-    height: 98px;
-    flex-shrink: 0;
-    fill: var(--Background-Disabled-Default, #D9D9D9);
-
-}
-
-.name2{
-    width: 205px;
-    height: 29px;
-    flex-shrink: 0;
-    color: #000;
+.vendors-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .vendor-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 100%; /* 24px */
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vendor-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .dietary-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dietary-icon {
+    font-size: 1.5rem;
+    color: #365f7b; /* Your brand color for the icons */
+  }
+  
+  /* View Menu Button */
+  .view-menu-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #365f7b; /* Brand color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-menu-button:hover {
+    background-color: #40abd3; /* Darker shade for hover */
+  }
+  

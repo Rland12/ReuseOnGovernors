@@ -2,17 +2,21 @@ import React, { useState } from 'react';
 import 'leaflet/dist/leaflet.css';
 import '../App.css';
 import NavigationBar from './NavigationBar';
+import Home from './HomePage';
+import { useNavigate } from 'react-router-dom';
 
 
-function Home() {
+function Login() {
   const [isLoginVisible, setLoginVisible] = useState(true);
+  const navigate = useNavigate()
 
   const handleClose = () => {
     setLoginVisible(false);
+    navigate('/home');
   };
 
   return (
-      <div>
+      <div className='main-content'>
 
       {isLoginVisible && (
         <div className='login-container'>
@@ -39,6 +43,7 @@ function Home() {
       {!isLoginVisible && (
         <>
           <NavigationBar />
+          <Home />
         </>
       )}
       </div>
@@ -46,4 +51,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Login;

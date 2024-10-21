@@ -1,5 +1,6 @@
 import './styles/RewardsPageStyles.css'
 import React, { useState } from 'react'; 
+import NavigationBar from './NavigationBar';
 
 const Rewards = () => {
 
@@ -13,17 +14,20 @@ const Rewards = () => {
     ];
   
     return (
-      <div className="rewards-container">
-        <header className="user-points-header">
-            <h2>Current Points: {userPoints}</h2>
-        </header>
-        {rewards.map((reward) => (
-          <div key={reward.id} className="reward-card">
-            <h3>{reward.title}</h3>
-            <span className="reward-points">{reward.points} Points</span>
-            <p>{reward.description}</p>
-          </div>
-        ))}
+      <div className='main-content'>
+        <div className="rewards-container">
+          <header className="user-points-header">
+              <h2>Current Points: {userPoints}</h2>
+          </header>
+          {rewards.map((reward) => (
+            <div key={reward.id} className="reward-card">
+              <h3>{reward.title}</h3>
+              <span className="reward-points">{reward.points} Points</span>
+              <p>{reward.description}</p>
+            </div>
+          ))}
+          <NavigationBar />
+        </div>
       </div>
     );
   };

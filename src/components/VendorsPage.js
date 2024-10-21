@@ -7,14 +7,14 @@ import Taco from './vendor-icons/taco-vista-icon.jpg';
 
 function VendorsPage() {
   return (
-    <div>
+    <div className='main-content'>
       <div className='header'>
         <h1 className='heading'>VENDORS</h1>
       </div>
 
       <div className='vendor-container'>
         <img className='eva-icon' src={Eva} alt= 'EvaIcon'></img>
-        <h2 className='name'>Little Eva's</h2>
+        <h2 className='name2'>Little Eva's</h2>
         <h3 className='bio'>Gluten-Free</h3>
 
       </div>
@@ -23,4 +23,4 @@ function VendorsPage() {
   );
 }
 
-export default VendorsPage;
+export default VendorsPage; 

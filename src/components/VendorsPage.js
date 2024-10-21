@@ -2,7 +2,7 @@ import './styles/VendorsPageStyles.css';
 import React from "react";
 import NavigationBar from './NavigationBar';
 import { FaLeaf, FaBreadSlice } from "react-icons/fa"; // Example icons for dietary restrictions
-import NavigationBar from './NavigationBar';
+
 
 const Vendors = () => {
   // data for vendors, including URLs for their sites

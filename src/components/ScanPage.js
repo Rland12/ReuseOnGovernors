@@ -2,7 +2,7 @@ import "./styles/ScanPageStyles.css";
 
 const ScanQR = () => {
   // Mock user profile image
-  const userProfileImage = "https://via.placeholder.com/100"; // Placeholder image
+  const userProfileImage = "https://clipart-library.com/2023/how-to-draw-a-cartoon-tree-featured-image-1200.png"; // Placeholder image
 
   return (
     <div className="scan-qr-container">

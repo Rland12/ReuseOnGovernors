@@ -52,6 +52,7 @@ const Events = () => {
         ))}
       </div>
       <NavigationBar />
+      </div>
     </div>
   );
 };

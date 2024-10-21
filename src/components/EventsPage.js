@@ -36,9 +36,8 @@ const Events = () => {
   ];
 
   return (
-    <div classname='main-content'>
-      <div className="events-container">
-        
+    <div className='main-content'>
+    <div className="events-container">
       <header className="events-header">
         <h2>Events</h2>
       </header>
@@ -52,8 +51,8 @@ const Events = () => {
           <span className="event-time">Time: {event.time}</span>
         </div>
       ))}
-      </div>
-      <NavigationBar />
+        <NavigationBar />
+    </div>
     </div>
   );
 };

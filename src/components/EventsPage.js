@@ -7,8 +7,7 @@ const Events = () => {
     {
       id: 1,
       title: "FAD Market",
-      description:
-        "Come for the one-of-a-kind goods, stay for a cock­tail and a game of pétanque ",
+      description: "Come for the one-of-a-kind goods, stay for a cocktail and a game of pétanque",
       date: "October 19 & 20",
       time: "10:00 AM",
     },
@@ -36,22 +35,21 @@ const Events = () => {
   ];
 
   return (
-    <div classname='main-content'>
+    <div className='main-content'>
       <div className="events-container">
+        <header className="events-header">
+          <h2>Events</h2>
+        </header>
         
-      <header className="events-header">
-        <h2>Events</h2>
-      </header>
-
-      {/* Event cards */}
-      {events.map((event) => (
-        <div key={event.id} className="event-card">
-          <h3>{event.title}</h3>
-          <p>{event.description}</p>
-          <span className="event-date">Date: {event.date}</span>
-          <span className="event-time">Time: {event.time}</span>
-        </div>
-      ))}
+        {/* Event cards */}
+        {events.map((event) => (
+          <div key={event.id} className="event-card">
+            <h3>{event.title}</h3>
+            <p>{event.description}</p>
+            <span className="event-date">Date: {event.date}</span>
+            <span className="event-time">Time: {event.time}</span>
+          </div>
+        ))}
       </div>
       <NavigationBar />
     </div>
@@ -59,3 +57,4 @@ const Events = () => {
 };
 
 export default Events;
+

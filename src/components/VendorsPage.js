@@ -1,6 +1,7 @@
 import './styles/VendorsPageStyles.css';
 import React from "react";
 import { FaLeaf, FaBreadSlice } from "react-icons/fa"; // Example icons for dietary restrictions
+import NavigationBar from './NavigationBar';
 
 const Vendors = () => {
   // data for vendors, including URLs for their sites
@@ -38,6 +39,7 @@ const Vendors = () => {
   ];
 
   return (
+    <div className='main-content'>    
     <div className="vendors-container">
       <header className="vendors-header">
         <h2>Vendors</h2>
@@ -68,6 +70,8 @@ const Vendors = () => {
           </a>
         </div>
       ))}
+      <NavigationBar />
+      </div>
     </div>
   );
 };

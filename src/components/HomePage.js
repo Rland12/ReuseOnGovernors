@@ -16,6 +16,9 @@ const customMarker = new L.Icon({
 function Home() {  
   return (
     <div className='main-content'>
+      <header className='home-header'>
+        <h1>Home</h1>
+      </header>
       <div className='map-container'>
         <MapContainer
           center={[40.6886, -74.0189]}

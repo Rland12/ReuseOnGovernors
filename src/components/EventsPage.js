@@ -1,4 +1,5 @@
 import "./styles/EventsPageStyles.css";
+import NavigationBar from './NavigationBar';
 
 const Events = () => {
   // Event data
@@ -35,7 +36,8 @@ const Events = () => {
   ];
 
   return (
-    <div className="events-container">
+    <div classname='main-content'>
+      <div className="events-container">
       {/* Header showing current user points */}
       <header className="events-header">
         <h2>Events</h2>
@@ -50,6 +52,8 @@ const Events = () => {
           <span className="event-time">Time: {event.time}</span>
         </div>
       ))}
+      </div>
+      <NavigationBar />
     </div>
   );
 };
